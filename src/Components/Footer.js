@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import Return from '../Assets/30day-return.png';
+import Originals from '../Assets/originals-100.png';
 
 export default function Footer() {
     return (
@@ -38,10 +40,10 @@ export default function Footer() {
                         </div>
                         <div className="footer_col">
                             <ul className="certifications">
-                                <li><img src="images/originals-100.png" alt="" />
+                                <li><img src={Originals} alt="" />
                                     <strong>100% ORIGINAL</strong> guarantee <br />
                                     for all products at myntra.com</li>
-                                <li><img src="images/30day-return.png" alt="" />
+                                <li><img src={Return} alt="" />
                                     <strong>Return within 30days</strong> of <br />
                                     receiving your order</li>
                             </ul>

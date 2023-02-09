@@ -3,6 +3,11 @@ import HeaderTag from './Snippets/HeaderTag';
 import styled from 'styled-components';
 // import styled from 'styled-components';
 
+const BrandListing = styled.div`
+> div.box{
+    width: 187px;
+}
+`
 export default function MoreBrands(props) {
     const brandData = [
         {
@@ -30,11 +35,6 @@ export default function MoreBrands(props) {
             imgSrc: 'https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/4/7368c532-0aec-4159-8358-0ea985c9512e1656953708980-4.jpeg',
         },
     ]
-    const BrandListing = styled.div`
-        > div.box{
-            width: 187px;
-        }
-    `
     return (
         <div className="brand-list gradiant pt-50 pb-50">
             <div className="wrapper">

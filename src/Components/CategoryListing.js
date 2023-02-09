@@ -45,7 +45,6 @@ const CategoryList = styled.div`
     }
   }
 `
-
 export default function CategoryListing() {
   return (
     <div className="category_section gradiant pt-50 pb-50">

@@ -37,7 +37,7 @@ export default function FeaturedList() {
             <FeaturedCard className="pt-50 pb-50">
                 <div className="wrapper">
                     {ftrData.map((data, i) => {
-                        return <div>
+                        return <div key={i}>
                             <div className="imgBox"><img src={data.src} alt={data.title} height="30px" /></div>
                             <h4>{data.title}</h4>
                         </div>

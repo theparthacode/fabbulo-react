@@ -1,5 +1,22 @@
 import styled from "styled-components"
 
+export default function NewsLetter() {
+    return (
+        <Newsletter className="pt-50 pb-50">
+            <div className="wrapper">
+                <div className="text">
+                    <h2>Get 10% off your first order</h2>
+                    <p>Enjoy 10% off your first purchase, plus regular updates on your <br />favourite designers, new arrivals and exclusive offers.</p>
+                    <form action="">
+                        <input type="text" placeholder="Enter your email..." />
+                        <input type="submit" value="Subscribe" className="gradiant_btn"/>
+                    </form>
+                </div>
+                <div className="img"><img src="images/newsletter-illustration.png" alt="" /></div>
+            </div>
+        </Newsletter>
+    )
+}
 const Newsletter = styled.section`
     background-color:hsla(0,0%,100%,1);
     background-image:radial-gradient(at 4% 10%,hsl(240deg 100% 92%) 0px,transparent 50%), radial-gradient(at 91% 87%,hsl(343deg 100% 91%) 0px,transparent 50%);
@@ -51,20 +68,3 @@ const Newsletter = styled.section`
         }
     }
 `
-export default function NewsLetter() {
-    return (
-        <Newsletter className="pt-50 pb-50">
-            <div className="wrapper">
-                <div className="text">
-                    <h2>Get 10% off your first order</h2>
-                    <p>Enjoy 10% off your first purchase, plus regular updates on your <br />favourite designers, new arrivals and exclusive offers.</p>
-                    <form action="">
-                        <input type="text" placeholder="Enter your email..." />
-                        <input type="submit" value="Subscribe" className="gradiant_btn"/>
-                    </form>
-                </div>
-                <div className="img"><img src="images/newsletter-illustration.png" alt="" /></div>
-            </div>
-        </Newsletter>
-    )
-}

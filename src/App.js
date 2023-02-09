@@ -13,6 +13,8 @@ import Login from './Pages/Login';
 import Wishlist from './Pages/Wishlist';
 import Orders from './Pages/Order';
 import Giftcards from './Pages/Giftcards';
+import ProductDetails from './Pages/ProductDetails';
+
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/shop" element={<ShopPage />} />
+          <Route path="/product/:productTitle/id=:id" element={<ProductDetails />} />
           <Route path="/men" element={<MenPage />} />
           <Route path="/women" element={<WomenPage />} />
           <Route path="/blog" element={<Blog />} />
@@ -33,7 +36,7 @@ function App() {
           <Route path="/giftcards" element={<Giftcards />} />
           <Route path="*" element={<h1>Error 404 Page not found!!</h1>} />
         </Routes>
-        <Footer />
+        <Footer /> 
       </BrowserRouter>
     </>
   );
