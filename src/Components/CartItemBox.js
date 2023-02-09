@@ -31,7 +31,7 @@ const CartItem = styled.div`
     margin-bottom: 8px;
     img{width: 60px;height: 60px;object-fit: cover;object-position: top center;}
     .title{flex: 1;}
-    .title h4{font-size: 14px;}
+    .title h4{font-size: 14px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;line-clamp: 1;-webkit-box-orient: vertical;}
     .cart-variant-data{display: flex; align-items: center; margin-top: 3px;
         .price{margin-right: 6px;font-size: 13px;}
     }

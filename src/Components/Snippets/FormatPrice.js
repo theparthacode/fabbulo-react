@@ -1,8 +1,8 @@
 
 export default function FormatPrice({ price }) {
     return (
-        Intl.NumberFormat("en-IN",
+        <h4>{Intl.NumberFormat("en-IN",
             { style: "currency", currency: "INR" }
-        ).format(price)
+        ).format(price)}</h4>
     )
 }

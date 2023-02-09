@@ -35,6 +35,7 @@ function CartDrawer(props, ref) {
         document.getElementById('cartDrawer')
     )
 }
+export default forwardRef(CartDrawer);
 const Cartdrawer = styled.section`
     position: fixed;
     top: 0;
@@ -59,11 +60,11 @@ const Cartdrawer = styled.section`
         &::-webkit-scrollbar-thumb{background: #adadad;border-radius:10px;}
     }
     h3{border-bottom: solid 1px #d1d1d1; padding-bottom: 10px;margin-bottom: 15px}
-    .cart-buttons{width: 100%; float: left;padding-top: 10px;}
+    .cart-buttons{width: 100%; float: left;padding-top: 10px; transition: 200ms ease;
+        &:hover{filter: hue-rotate(-20deg);}
+    }
     .cart-total-price {display: flex;align-items:center;justify-content: space-between;margin-bottom: 8px;
         .total-price{font-weight:600;}
     }
     .cart-checkout button{width: 100%; float:left;border-radius: 3px;cursor: pointer;background: linear-gradient(-90deg,rgb(142,45,226),rgb(74,0,224) 100%);color: #fff;font-size: 15px;text-transform: uppercase;font-weight: 500;padding: 12px;}
 `
-
-export default forwardRef(CartDrawer);

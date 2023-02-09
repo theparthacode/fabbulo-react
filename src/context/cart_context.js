@@ -73,8 +73,6 @@ const CartProvider = ({ children }) => {
     }
     updateTotalPrice();
 
-    console.log(cartValue.cart);
-
     return <CartContext.Provider value={{ cartItems, cartValue, addtoCart, deleteCartItem, cartIncrement, cartDecrement }}> {children} </CartContext.Provider>
 }
 
